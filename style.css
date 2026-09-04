@@ -1,0 +1,333 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #ff6b00;
+}
+
+.logo i {
+    margin-right: 8px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ff6b00;
+}
+
+.btn-nav {
+    background-color: #ff6b00;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.btn-nav:hover {
+    background-color: #e05e00;
+    color: #fff;
+}
+
+/* Menu Hambúrguer (Celular) */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Seção Principal (Hero) */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffcf70;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25d366;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1eb854;
+}
+
+/* Seções Gerais */
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.section-desc {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.bg-light {
+    background-color: #eee;
+}
+
+/* Cards de Diferenciais */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 30%;
+    min-width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: #ff6b00;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+}
+
+/* Serviços */
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 40%;
+    min-width: 280px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-left: 5px solid #ff6b00;
+    text-align: left;
+}
+
+.service-box h3 {
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+/* Estilos da Calculadora */
+.calc-box {
+    background: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: left;
+    border-top: 5px solid #ff6b00;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.btn-calc {
+    background-color: #ff6b00;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-calc:hover {
+    background-color: #e05e00;
+}
+
+.resultado-oculto {
+    display: none;
+}
+
+#resultado-calc {
+    margin-top: 20px;
+    background: #fff8f0;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #ff6b00;
+}
+
+#resultado-calc h3 {
+    margin-bottom: 8px;
+    color: #ff6b00;
+    font-size: 1.2rem;
+}
+
+#resultado-calc p {
+    margin: 5px 0;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Contato e Redes Sociais */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.btn-social {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: opacity 0.3s;
+}
+
+.btn-social:hover {
+    opacity: 0.85;
+}
+
+.btn-social.whatsapp {
+    background-color: #25d366;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1a1a1a;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* Responsivo para celular */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #1a1a1a;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+    .nav-menu.active {
+        display: flex;
+    }
+    .nav-menu a {
+        margin: 10px 0;
+    }
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-card {
+        width: 100%;
+    }
+    .service-box {
+        width: 100%;
+    }
+}

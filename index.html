@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mestre do Churrasco - O Melhor Churrasco para o seu Evento</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cabeçalho / Menu -->
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo"><i class="fa-solid fa-fire"></i> Mestre do Churrasco</h1>
+            
+            <!-- Botão do menu para celular (hambúrguer) -->
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#calculadora">Calculadora</a>
+                <a href="#contato" class="btn-nav">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal (Hero) -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>O Verdadeiro Sabor do Churrasco no seu Evento</h2>
+            <p>Levamos a melhor experiência em carnes nobres e suculentas direto para a sua casa, festa ou confraternização.</p>
+            <a href="https://wa.me/5511954052860?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20churrasco." target="_blank" class="btn-whatsapp" id="btn-whats-hero">
+                <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre o Nosso Churrasco</h2>
+            <p class="section-desc">Paixão, técnica e os melhores cortes selecionados para transformar qualquer ocasião em um momento inesquecível.</p>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <i class="fa-solid fa-cow"></i>
+                    <h3>Carnes Selecionadas</h3>
+                    <p>Trabalhamos apenas com cortes de alta qualidade e procedência garantida.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-fire-flame-curved"></i>
+                    <h3>Ponto Perfeito</h3>
+                    <p>Profissionais experientes no comando da brasa para entregar a carne suculenta e no ponto ideal.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <h3>Comodidade Total</h3>
+                    <p>Você curte com seus convidados enquanto nós cuidamos de tudo, do fogo à limpeza.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos" class="section bg-light">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <p class="section-desc">Atendemos aniversários, casamentos, confraternizações de empresas e reuniões em família.</p>
+            
+            <div class="services-grid">
+                <div class="service-box">
+                    <h3>Churrasco Completo em Domicílio</h3>
+                    <p>Levamos o churrasqueiro, os acompanhamentos, as carnes e todo o preparo necessário para o seu evento.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Kits Churrasco Sob Encomenda</h3>
+                    <p>Carnes temperadas, embaladas e prontas apenas para ir direto para a sua grelha.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Calculadora de Churrasco -->
+    <section id="calculadora" class="section">
+        <div class="container">
+            <h2>Calculadora de Churrasco</h2>
+            <p class="section-desc">Descubra quanto comprar para a sua festa sem passar aperto!</p>
+            
+            <div class="calc-box">
+                <div class="input-group">
+                    <label for="homens">Homens (comem mais):</label>
+                    <input type="number" id="homens" min="0" value="0">
+                </div>
+                <div class="input-group">
+                    <label for="mulheres">Mulheres:</label>
+                    <input type="number" id="mulheres" min="0" value="0">
+                </div>
+                <div class="input-group">
+                    <label for="criancas">Crianças:</label>
+                    <input type="number" id="criancas" min="0" value="0">
+                </div>
+                
+                <button id="calcular-btn" class="btn-calc">Calcular Suprimentos</button>
+
+                <div id="resultado-calc" class="resultado-oculto">
+                    <h3>Resultado Estimado:</h3>
+                    <p id="res-carne">🥩 Carne: 0 kg</p>
+                    <p id="res-linguica">🌭 Linguiça: 0 kg</p>
+                    <p id="res-bebida">🍺 Cerveja / Refri: 0 litros</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato / Redes Sociais -->
+    <section id="contato" class="section bg-light">
+        <div class="container contato-container">
+            <h2>Entre em Contato</h2>
+            <p>Faça já o seu orçamento sem compromisso ou acompanhe nosso trabalho nas redes sociais!</p>
+            
+            <div class="social-buttons">
+                <a href="https://wa.me/5511954052860?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços." target="_blank" class="btn-social whatsapp" id="btn-whats-contato">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Mestre do Churrasco. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
